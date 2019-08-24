@@ -48,7 +48,6 @@
 |body|text||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-|file_id|integer||
 |file_name|string||
 ### Association
 - belongs_to : user
