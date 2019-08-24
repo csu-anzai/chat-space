@@ -21,8 +21,6 @@
 ### Association
 - has_many : groups, through: :users_groups
 - has_many : messages
-- has_many : files
-
 
 ## groupsテーブル
 |Column|Type|Options|
@@ -30,11 +28,9 @@
 |group_name|string|null: false, unique: true|
 |user_id|integer|null: false, foreign_key: true|
 |message_id|integer|null: false, foreign_key: true|
-|file_id|integer||
 ### Association
 - has_many : users, through: :users_groups
 - has_many : messages
-- has_many : files
 
 ## users_groupsテーブル
 |Column|Type|Options|
@@ -51,19 +47,11 @@
 |body|text|null: false|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-|file_id|integer|foreign_key: true|
+|file_id|integer||
+|file_name|string||
 ### Association
 - belongs_to : user
 - belongs_to : group
-- has_many : files
-
-## filesテーブル
-|Column|Type|Options|
-|------|----|-------|
-|file_name|string|null: false|
-|message_id|integer|null: false, foreign_key: true|
-### Association
-- belongs_to : message
 
 # Creator
 
