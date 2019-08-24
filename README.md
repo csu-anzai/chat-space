@@ -19,9 +19,10 @@
 |email|string|null: false, unique: true|
 |password|string|null: false|
 ### Association
+- has_many : groups, through: :users_groups
 - has_many : messages
 - has_many : files
-- has_many : groups
+
 
 ## groupsテーブル
 |Column|Type|Options|
