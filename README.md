@@ -27,8 +27,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, unique: true|
-|user_id|integer|null: false, foreign_key: true|
-|message_id|integer|null: false, foreign_key: true|
+
 ### Association
 - has_many : users, through: :users_groups
 - has_many : users_groups
