@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+ @import "./_reset";
+ @import "_variables.scss";
+ @import "font-awesome";
+ @import "./header";
+ @import "./left_side_bar";
+ @import "./right_main_chat/top_parts";
+ @import "./right_main_chat/middle_parts";
+ @import "./right_main_chat/form";
+
+
+
+
+

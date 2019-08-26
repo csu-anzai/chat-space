@@ -1,0 +1,57 @@
+@import "_variables.scss";
+
+.sideBar  {
+  float: left;
+  padding-top: 24px;
+}
+
+.chatTop {
+  background-color: $side_blue_dark;
+  width: 300px;
+  height: 100px;
+  color: $white;
+  align-items: center;
+  padding: 0 20px;
+    &__userName  {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 100px;
+      }
+    &__btn--icon  {
+      margin-left: 0.3rem;
+      float: right;
+      line-height: 100px;
+      }
+      a {
+        color: $white;
+        text-decoration: none;
+        &:visited{
+          color: $white;
+          text-decoration: none;
+        }
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+
+    
+
+.chatBottom {
+  background-color: $side_blue_light;
+  width: 300px;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+    &__groupName  {
+      font-size: 15px;
+      font-weight: bold;
+      padding: 20px 0 0 0;
+      color: $white;
+      }
+    &__groupMessage  {
+      font-size: 11px;
+      font-weight: bold;
+      padding: 5px 0 40px 0;
+      color: $white;
+      }
+    }
