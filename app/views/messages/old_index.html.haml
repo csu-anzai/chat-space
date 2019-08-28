@@ -1,0 +1,56 @@
+-# .flashBox
+-#   グループを作成しました
+.sideBar
+  .chatTop
+    %p.chatTop__userName
+      ユーザー名サンプル
+      = link_to root_path do
+        = fa_icon 'cog', class: "chatTop__btn--icon"
+      = link_to root_path do
+        = fa_icon 'edit', class: "chatTop__btn--icon"
+
+  .chatBottom
+    %p.chatBottom__groupName
+      グループ名サンプル
+      %p.chatBottom__groupMessage
+        グループ内メッセージ
+
+.chatMain
+  .mainTop
+    .mainTop__group
+      %p.mainTop__groupName
+        グループ名サンプル
+      %p.mainTop__groupMessage
+        グループ内メッセージ
+    .mainTop__edit-btn
+      = link_to root_path do
+        Edit
+  
+  .mainMiddle
+    .mainMiddle__messages
+      .mainMiddle__info
+        %p.mainMiddle__info-userName
+          ユーザー名サンプル
+        %p.mainMiddle__info-date
+          YYYY/MM/DD(AAA)
+      %p.mainMiddle__text
+        メッセージサンプル
+
+    .mainMiddle__messages
+      .mainMiddle__info
+        %p.mainMiddle__info-userName
+          ユーザー名サンプル
+        %p.mainMiddle__info-date
+          YYYY/MM/DD(AAA)
+      %p.mainMiddle__text
+        メッセージサンプル
+
+  .form
+    .formMenu
+      .formMenu__box
+        %p.formMenu__text
+          type a message
+          = link_to root_path do
+            = fa_icon "image", class: "formMenu__image-btn"
+      .formMenu__send-btn
+        Send

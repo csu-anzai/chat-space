@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module ChatSpace
   class Application < Rails::Application
+    config.i18n.default_locale = :ja #日本語化
     config.generators do |g|
       g.stylesheets false
       g.javascripts false
